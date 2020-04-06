@@ -1,0 +1,8 @@
+def wrap(string, max_width):
+    for i in range(0,len(string),max_width):
+        x = string[i:i+max_width]
+        print(x)
+if __name__=="__main__":
+    string = input()
+    max_width = int(input())
+    wrap(string, max_width)
