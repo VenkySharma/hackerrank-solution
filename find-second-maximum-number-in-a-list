@@ -1,0 +1,19 @@
+#solutiom 1
+
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = set(map(int, input().split()))
+    arr.remove(max(arr))
+    print(max(arr))
+
+
+#solution 2
+
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    p=list(set(arr))
+    p.sort()          
+    print(p[-2])    
