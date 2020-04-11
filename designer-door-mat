@@ -1,0 +1,19 @@
+# solution 1
+
+
+n,m = map(int,input().split())
+for i in range(n//2):
+    print((".|."*(2*i+1)).center(m,"-"))
+print("WELCOME".center(m,"-"))
+for i in range(n-2,0,-2):
+    print((".|."*(i)).center(m,"-"))
+    
+    
+ #SOLUTION 2
+ 
+ # Enter your code here. Read input from STDIN. Print output to STDOUT
+n, m = map(int,input().split())
+pattern = [('.|.'*(2*i + 1)).center(m, '-') for i in range(n//2)]
+print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
+
+
