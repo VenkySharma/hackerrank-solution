@@ -1,0 +1,36 @@
+why we write to take input as list(map(int, input().split()))
+
+
+Answer:python take every input as a single string 
+     as 
+>>> b = input()
+4 5 6 7 8 3 4 5 6
+>>> b
+'4 5 6 7 8 3 4 5 6'
+>>> type(b)
+<class 'str'>
+     here we see the above code we give the input as space separated integers but it take whole input as a single string
+     
+>>> c = input().split()
+4 5 6 7 8 3 4 5 6
+>>> c
+['4', '5', '6', '7', '8', '3', '4', '5', '6']
+>>> type(c)
+<class 'list'>
+ when we do split() it convert the whole input to list of our input by differentiating with separator(here separator is spaces(" "))
+ 
+ 
+ >>> c = input().split(",")
+2,3,4,56,7,8,9
+>>> c
+['2', '3', '4', '56', '7', '8', '9']
+ 
+ here separator is comma, by default separator is space if we provide no arguements in split() function
+ 
+ 
+ map is used to convert iterator by passing through a function
+ when we use map(int,list)
+ it convert each element of list by pasiing through int function
+ 
+ 
+ lastly we use list again to convert to list of input
