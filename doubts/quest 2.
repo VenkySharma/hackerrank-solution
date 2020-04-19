@@ -1,0 +1,21 @@
+'''n,m = map(int,input().split())
+for i in range(n//2):
+    print((".|."*(2*i+1)).center(m,"-"))
+print("WELCOME".center(m,"-"))
+for i in range(n-2,0,-2):
+    print((".|."*(i)).center(m,"-"))'''
+    
+    
+    above line number 2 and 3 for above half of the pattern
+    4 th for middle
+    and 5 and 6th for the rest
+    you can do it in your own way
+    
+    
+     center() function takes two arguements one maximum character of string in a single line
+     and what to print (by default space) by doing left and right padding itself
+     
+     2nd and 3rd line print (.|.) 2i+1 for each i where width of string is m and in left and right it print("-")
+      similarly it does for the rest
+            
+            
