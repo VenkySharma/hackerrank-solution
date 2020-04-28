@@ -1,0 +1,14 @@
+n = int(input())
+s = set(map(int, input().split()))
+for __ in range(int(input())):
+    p=input()
+    if p=='pop' and len(s)!=0:
+        s.pop()
+    else:
+        m,n=p.split()
+        if m=='remove' and len(s)!=0:
+            s.remove(int(n))
+        if m=='discard':
+            s.discard(int(n))
+print(sum(s))
+        
