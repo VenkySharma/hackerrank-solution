@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+s=list(map(int,input().split()))
+p=list(set(s))
+print((sum(p)*n-sum(s))//(n-1))
